@@ -1,0 +1,80 @@
+/* #region sold items */
+
+.sold-item__container {
+  grid-area: sold-item__container;
+  margin: 0 auto;
+  max-width: 1350px;
+}
+
+.sold-image {
+  width: 100%;
+  height: 329.24px;
+  max-height: 329.24px;
+  background-color: white;
+}
+
+.sold-macbook__image {
+  padding: 4rem 0;
+}
+
+.sold-macbook__image img {
+  width: 100%;
+}
+
+.sold-watchpad__image {
+  padding: 2rem 0;
+  text-align: center;
+}
+
+.sold-watchpad__image img {
+  width: 56%;
+}
+
+.sold-macbook {
+  grid-area: macbook;
+}
+
+.sold-swatch {
+  grid-area: swatch;
+}
+.sold-airbook {
+  grid-area: airbook;
+}
+
+.sold-ipad {
+  grid-area: ipad;
+}
+
+.sold-product__title h2 {
+  font-weight: 500;
+  margin: 0.5rem 0 0.725rem;
+}
+
+.sold-product__description span{
+  font-weight: 300;
+  font-size: 0.9rem;
+}
+
+.sold-product__price h3 {
+  font-weight: 400;
+  margin: 1.3rem 0 1.25rem;
+}
+
+.sold-item__content {
+  max-width: 1350px;
+  display: grid;
+  column-gap: 1rem;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-areas:
+  'macbook swatch airbook ipad';
+  justify-items: center;
+}
+
+.sold-item {
+  overflow: hidden;
+  width: 100%;
+  height: 475px;
+  max-height: 475px;
+}
+
+/* #endregion sold items */ 

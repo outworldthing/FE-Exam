@@ -1,0 +1,185 @@
+.anything-container {
+  grid-area: anything-container;
+  background-color: rgb(255, 255, 255);
+  margin: 0 auto;
+  width: 100%;
+}
+
+.anything-text {
+  grid-area: anything-text;
+}
+
+.anything-text h1 {
+  margin: 0 0 0.5rem;
+  font-size: 2.6rem;
+}
+
+.anything-input {
+  display: grid;
+  grid-area: anything-input;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas:
+  'input-text'
+  'input-pills';
+}
+
+.input-text {
+  width: 50%;
+  margin: 0 auto;
+  position: relative;
+  grid-area: input-text;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.input-text img {
+  position: absolute;
+  top: 43px;
+  left: 20px;
+}
+
+.input-text input {
+  width: 100%;
+  font-size: 1.2rem;
+  padding: 1.1rem 3.4rem 1.1rem 3.4rem;
+  border-radius: 50px;
+  background-color: #ebedec;
+  border: 1px #d6d6d6 solid;
+  color: black;
+}
+
+.input-text input::placeholder {
+  color: black;
+  font-weight: 300;
+  font-family: 'Readex Pro', sans-serif !important;
+}
+
+.input-pills {
+  width: 50%;
+  margin: 0 auto;
+  grid-area: input-pills;
+}
+
+.input-pills button {
+  border-radius: 50px;
+  padding: 0.8rem 1.4rem;
+  margin: 0.25rem 0;
+  font-size: 0.9rem;
+  font-weight: 300;
+  font-family: 'Readex Pro', sans-serif !important;
+  background-color: white;
+  border: 1px #d6d6d6 solid;
+}
+
+.input-pills button:hover {
+  background-color: #0063fe;
+  transition: all 0.5s ease;
+}
+
+.anything-header {
+  width: 100%;
+  grid-area: anything-header;
+  row-gap: 1rem;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas:
+  'anything-text'
+  'anything-input';
+
+  margin: 0 auto;
+  text-align: center;
+}
+
+.anything-content {
+  margin: 0 auto;
+  max-width: 1350px;
+  display: grid;
+  padding: 2.6rem 0 2rem;
+  grid-area: anything-container;  
+  row-gap: 4rem;
+  grid-template-rows: 2fr 3fr;
+  grid-template-areas:
+  'anything-header'
+  'anything-banner';
+}
+
+.anything-banner {
+  width: 70%;
+  border-radius: 15px;
+  grid-area: anything-banner;
+  background-color: #dce5e2;
+  padding: 3rem 0;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.signup-header {
+  grid-area: signup-header;
+}
+
+.signup-header h1 {
+  font-size: 2.6rem;
+  margin: 0 0 0.5rem;
+}
+
+.signup-header span {
+  font-weight: 300;
+  font-size: 1rem;
+}
+
+.signup-image {
+  grid-area: signup-image;
+}
+
+.signup-image img {
+  width: 35%;
+}
+
+.signup-email {
+  width: 60%;
+  margin: 0 auto; 
+  position: relative;
+  grid-area: signup-email;
+}
+
+.signup-email input {
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0);
+  border: 1px solid black;
+  border-radius: 25px;
+  padding: 1rem 1rem 1rem 1.6rem;
+
+  font-family: 'Readex Pro', sans-serif !important;
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+.signup-email button {
+  height: 100%;
+  color: white;
+  background-color: black;
+  position: absolute;
+  right: 0;
+  border: 0;
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+  padding: 1rem 2rem;
+
+  font-family: 'Readex Pro', sans-serif !important;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.anything-signup {
+  width: 70%;
+  margin: 0 auto;
+  display: grid;
+  overflow: hidden;
+  grid-area: anything-signup;
+  row-gap: 1rem;
+  grid-template-rows: auto auto auto;
+  grid-template-areas:
+  'signup-header'
+  'signup-image'
+  'signup-email';
+}

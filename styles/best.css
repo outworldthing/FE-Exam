@@ -1,0 +1,87 @@
+/* #region best seller */
+
+.best-seller__container {
+  grid-area: best-seller__container;
+  background-color: rgb(255, 255, 255);
+  margin: 0 auto;
+  width: 100% !important;
+}
+
+.seller-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  margin: 1.6rem auto 0;
+  padding-bottom: 2rem;
+}
+
+.best-latest {
+  grid-area: latest;
+}
+
+.seller-content {
+  grid-area: selling;
+  max-width: 1350px;
+}
+
+.best-every {
+  grid-area: every;
+}
+
+
+.best-seller__content {
+  width: 100%;
+  display: grid;
+  column-gap: 1rem;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas:
+  'latest selling every';
+  justify-items: center;
+}
+
+.best-content {
+  width: 100%;
+  height: 448px;
+  border-radius: 25px;
+  background-color: #ebedec;
+}
+
+.best-content__text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 2rem 0 0;
+}
+
+.best-content__text span {
+  font-weight: 300;
+}
+
+.best-content__text h1 {
+  margin: 0 0 1.75rem;
+}
+
+.best-content__image {
+  overflow: hidden;
+  text-align: center;
+  padding: 1.5rem 1rem 0.5rem;
+}
+
+.best-content__image img{
+  max-width: 100%;
+  width: 63%;
+}
+
+.best-laptop img {
+  width: 72%;
+}
+
+.laptop-image img{
+  max-width: 100%;
+  width: 87%;
+}
+
+/* #endregion best seller */

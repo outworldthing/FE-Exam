@@ -1,0 +1,75 @@
+
+.footer-container {
+  width: 100% !important;
+  background-color: #ebedec;
+}
+
+.footer-logo {
+  grid-area: footer-logo;
+}
+
+.footer-logo img {
+  margin: 1rem 0 0;
+}
+
+.footer-logo p {
+  font-weight: 300;
+}
+
+.footer-products {
+  grid-area: footer-products;
+}
+
+.footer-company {
+  grid-area: footer-company;
+}
+
+.footer-support { 
+  grid-area: footer-support;
+}
+
+.footer-follow {
+  grid-area: footer-follow;
+}
+
+.sub-menu {
+  display: flex;
+  flex-direction: column;
+  padding: 0 0 0 2rem;
+}
+
+.sub-menu h1 {
+  margin-top: 0;
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+.sub-menu a {
+  display: block;
+  text-decoration: none;
+  font-weight: 300;
+  font-size: 1.2rem;
+  color: black;
+  margin: 0.5rem 0;
+}
+
+.sub-menu a:hover {
+  font-weight: 400;
+  transition: all 0.1s ease;
+}
+
+.footer-content {
+  width: 1350px;
+  display: grid;
+  margin: 0 auto;
+  padding: 3rem 0 0;
+  grid-template-columns: 1.3fr 1fr 1fr 1fr 1fr;
+  grid-template-areas:
+  'footer-logo footer-products footer-company footer-support footer-follow';
+}
+
+.footer-container hr {
+  width: 1350px;
+  margin: 4rem auto;
+  border-color: #ebedec;
+}
